@@ -58,7 +58,7 @@ export function DataTableRowActions({ row }: DataTableRowActionsProps) {
           setTimeout(() => setOpenDialog(false), 100);
         },
         onError: (error) => {
-          toast({ title: "Error", description: "Member Tidak dapat Menghapus Tugas", variant: "destructive" });
+          toast({ title: "Error", description: `Member Tidak dapat Menghapus Tugas: ${error.message}`, variant: "destructive" });
         },
       }
     );

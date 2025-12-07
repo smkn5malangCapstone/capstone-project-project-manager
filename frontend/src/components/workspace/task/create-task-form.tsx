@@ -194,7 +194,7 @@ const statusOptions = taskStatusList.map((status) => ({
       onError: (error) => {
         toast({
           title: "Error",
-          description: "Member Tidak Dapat Membuat Tugas",
+          description: `Member Tidak Dapat Membuat Tugas: ${error.message}`,
           variant: "destructive",
         });
       },
